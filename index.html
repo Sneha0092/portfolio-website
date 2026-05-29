@@ -40,6 +40,14 @@
     <div class="container">
       <h1>Sneha Khadatkar</h1>
 
+      <button
+        class="theme-toggle"
+        aria-label="Toggle Dark Mode"
+        onclick="document.body.classList.toggle('dark-mode')"
+      >
+        Toggle Theme
+      </button>
+
       <!-- Navigation -->
       <nav aria-label="Main Navigation">
         <ul>
@@ -56,8 +64,8 @@
   <main id="main-content">
 
     <!-- Hero Section -->
-    <section aria-labelledby="hero-heading">
-      <div class="container">
+    <section class="hero" aria-labelledby="hero-heading"></section>
+      <div class="container hero-grid"></div>
         <h2 id="hero-heading">Welcome to My Portfolio</h2>
 
         <p>
@@ -76,17 +84,19 @@
       <div class="container">
         <h2 id="skills-heading">Skills</h2>
 
-        <article>
+        <div class="skills-grid">
+
+        <article class="card">
           <h3>Frontend Development</h3>
           <p>HTML5, CSS3, JavaScript, React</p>
         </article>
 
-        <article>
+        <article class="card">
           <h3>Backend Development</h3>
           <p>Node.js, Express.js, APIs</p>
         </article>
 
-        <article>
+        <article class="card">
           <h3>Programming Languages</h3>
           <p>C, Python, JavaScript</p>
         </article>
